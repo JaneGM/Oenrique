@@ -1,6 +1,18 @@
 .skills{
   padding-top: 115px;
   padding-bottom: 120px;
+  @include max-screen(1024px){
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  @include max-screen(992px){
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  @include max-screen(768px){
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
   .graph{
     max-width: 1000px;
     @include max-screen(1024px){

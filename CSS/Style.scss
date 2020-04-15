@@ -11,6 +11,7 @@
 @import "style-footer";
 @import "owl.theme.default.min.css";
 @import "owl.carousel.min.css";
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
 $font-family:'Asap', sans-serif;
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
