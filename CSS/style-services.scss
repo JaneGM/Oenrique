@@ -1,12 +1,12 @@
-
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
     @content;
   }
 }
-.block-3{
+.services{
   background-color: #f6f6f6;
   padding-top: 120px;
+  padding-bottom: 115px;
   h3{
     font-family: $font-family;
     font-weight: bold;
@@ -43,7 +43,7 @@
     padding: 40px 0 ;
   }
 }
-.block-4{
+.skills{
   padding-top: 115px;
   padding-bottom: 120px;
   .graph{

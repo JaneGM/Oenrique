@@ -1,7 +1,9 @@
-.block-2{
+.about{
   padding-top: 110px;
+  padding-bottom: 120px;
   @include max-screen(1024px){
     padding-top: 90px;
+    padding-bottom: 90px;
   }
   .container {
     h2 {

@@ -2,8 +2,18 @@
 @import "bootstrap.min.css";
 @import "http://fonts.googleapis.com/css?family=Asap:400,500&display=swap";
 @import "Style-header";
-@import "block-2";
-@import "block-3";
-@import "block-5";
-@import "block-6";
+@import "style-about";
+@import "style-services";
+@import "style-skills";
+@import "style-portfolio";
+@import "style-testimonials";
+@import "funfact";
+@import "style-footer";
+@import "owl.theme.default.min.css";
+@import "owl.carousel.min.css";
 $font-family:'Asap', sans-serif;
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
