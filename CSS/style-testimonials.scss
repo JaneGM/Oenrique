@@ -46,6 +46,9 @@
     }
   }
   .block-carousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 955px;
     height: 350px;
     border: black solid  1px;

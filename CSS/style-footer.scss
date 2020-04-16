@@ -49,11 +49,18 @@
 
   .container {
     .form-control {
+      display: inline-block;
         width: 370px;
         height: 58px;
       font-family: $font-family;
       font-weight: normal;
       font-size: 16px;
+      @include max-screen(1024px){
+        width: 350px;
+      }
+      @include max-screen(992px){
+        width: 280px;
+      }
       @include max-screen(375px){
         width: 300px;
       }
@@ -66,6 +73,9 @@
       font-size: 16px;
       padding-top: 25px;
       padding-left: 10px;
+      @include max-screen(1024px){
+        width: 700px;
+      }
       @include max-screen(992px){
         width: 600px;
       }
