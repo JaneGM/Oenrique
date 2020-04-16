@@ -46,13 +46,22 @@
     }
   }
   .block-carousel{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 955px;
+    width: 955px;
     height: 350px;
     border: black solid  1px;
     padding: 80px 80px 60px 120px;
+    @include max-screen(992px){
+      width: 750px;
+      padding: 60px 60px 45px 90px;
+    }
+    @include max-screen(768px){
+      width: 550px;
+      padding: 40px 40px 25px 60px;
+    }
+    @include max-screen(375px){
+      width: 300px;
+      padding: 25px;
+    }
     .foto-client{
       width: 160px;
       img{
