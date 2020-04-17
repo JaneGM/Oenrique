@@ -14,9 +14,47 @@ $font-family:'Asap', sans-serif;
   background-image: url("../images/bg-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-
   .container {
+    .navbar-default{
+      background-image: none;
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+      ul {
+        list-style: none;
+
+        li {
+          text-transform: uppercase;
+          margin-top: 20px;
+          @include max-screen(768px){
+            margin-top: 5px;
+          }
+
+          &:hover a:after {
+            width: 100%;
+          }
+
+          a {
+            text-decoration: none;
+            color: #4d4d4d;
+            font-size: 16px;
+            @include max-screen(767px) {
+              font-size: 12px;
+            }
+
+            &:after {
+              content: '';
+              display: block;
+              width: 0;
+              height: 2px;
+              background-color: #7c8899;
+              transition: 0.3s;
+              margin-top: 9px;
+            }
+          }
+        }
+      }
+    }
     .block-foto{
       max-width: 580px ;
       @include max-screen(1024px){
