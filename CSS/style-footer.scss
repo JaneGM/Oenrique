@@ -168,6 +168,15 @@
   max-width: 1175px;
   border-top: white 1px solid;
   display: flex;
+  @include max-screen(660px){
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 0px;
+
+
+  }
   .social{
     margin-top: 25px;
     width: 210px;
@@ -188,9 +197,27 @@
     }
   }
   .all-right{
-     font-size: 16px;
-     color: white;
-    margin-top: 32px;
+    font-size: 16px;
+    color: white;
+    margin: auto;
+    margin-left: 320px;
+    @include max-screen(1024px){
+      margin-left: 140px;
+    }
+    @include max-screen(992px){
+      margin-left: 60px;
+    }
+    @include max-screen(768px){
+      margin-left: 50px;
+    }
+    @include max-screen(660px){
+      margin:auto;
+      margin-top: 20px;
+    }
+    @include max-screen(320px){
+      margin:auto;
+      margin-top: 15px;
+    }
     h5{
       text-align: center;
     }
