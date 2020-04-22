@@ -15,6 +15,9 @@ $font-family:'Asap', sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
   .container {
+    .navbar-default .navbar-toggle{
+      margin-top: 15px;
+    }
     .navbar-default{
       background-image: none;
       background-color: transparent;

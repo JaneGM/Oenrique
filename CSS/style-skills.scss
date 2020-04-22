@@ -14,16 +14,6 @@
     padding-top: 50px;
   }
   .graph{
-    max-width: 1000px;
-    @include max-screen(1024px){
-      max-width: 900px;
-    }
-    @include max-screen(992px){
-      max-width: 700px;
-    }
-    @include max-screen(768px){
-      max-width: 500px;
-    }
     img{
       width: 100%;
     }
